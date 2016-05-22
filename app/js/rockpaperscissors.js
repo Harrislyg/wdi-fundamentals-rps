@@ -41,6 +41,19 @@ function getWinner(playerMove,computerMove) {
     // Assume that the only values playerMove and computerMove can have are 'rock', 'paper', and 'scissors'.
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
+    if(playerMove === computerMove) {
+        console.log("It's a tie!")
+    }
+    else if(playerMove == "rock") {
+        if(computerMove == "paper") {
+            console.log("paper beats rock");
+        }
+        else {
+            console.log("rock beats scissors");
+        }
+    }
+
+
     return winner;
 }
 
